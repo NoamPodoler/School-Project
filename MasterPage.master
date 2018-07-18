@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <title>Highlight</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500,400,300,200,100' rel='stylesheet' type='text/css'>
+
+
+        <script src="/Scripts/Style.js"></script>
+        <script src="/Scripts/UserAuthentication.js"></script>
+        <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet1.css">
+
+    </head>
+
+    <body>
+
+        <ul class="navigation-bar">
+            <li><img src="/images/list-b.png" height="26" class="menu-icon" id="menu-black"><img src="/images/list-w.png" height="26" class="menu-icon" id="menu-white"></li>
+            <li id="website-title">Highlight</li>
+            <div class="nav-content1">
+                <li><a href="/Page/Home.aspx">Home <img src="/images/home.png" height="10" class="img-white"></a></li>
+                <div class="right-navigation-bar">
+                    <li><a class="about-link"><a href="/page/about.aspx">About <img src="/images/about.png" height="10" class="img-white"></a></li>
+                    <li class="profile-trigger"><%=Uname%> <img src="/images/account.png" height="10" class="img-white"></li>
+                </div>
+            </div>
+        </ul>
+
+        <div class="left">
+            <div class="left-navigation-bar">
+                <div class="left-nav-top">
+
+                </div>
+                <ul class="nav-content2">
+                    <li id="expand-btn"><span class="hover-sign">-</span>    Trending Now</li>
+                    <li><a href="/Page/Movie.aspx"><span class="hover-sign">-</span>    Movie</a></li>
+                    <li><a href="/Page/TV.aspx"><span class="hover-sign">-</span>    TV Series</a></li>
+                    <li><a href="/Page/VideoGame.aspx"><span class="hover-sign">-</span>    Video Game</a></li>
+                    <li><a href="/Page/MobilePhone.aspx"><span class="hover-sign">-</span>    Mobile Phone</a></li>
+                    <li><a href="/Page/Application.aspx"><span class="hover-sign">-</span>    Application</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="expand-navbar">
+            <div class="top-expand">
+            </div>
+
+            <div class="expand-content" id="content1">A</div>
+            <div class="expand-content" id="content2">B</div>
+            <div class="expand-content" id="content3">C</div>
+            <div class="expand-content" id="content4">D</div>
+        </div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div class="bottom-page">
+          <div class="profile-page">
+            <div class="profile-top1"><img src="/images/exit.png" height="12"></div>
+            <div class="profile-top2"> <h1><%=Uname%></h1><img src="/images/account2.png" id="profile-pic" height="50"><a href="/Page/LogOut.aspx"><img src="/images/logout.png" height="30"></a> <a href="/Page/Profile.aspx"><img src="/images/settings.png" id="settings-pic" height="30"></a></div><br/><br/>
+              <div class="profile-content">
+        
+                <div class="image-profile" id="1">
+
+                  <div class="top">
+                    <div class="top-content">
+                      <span class="name"><%=Uname%></span>
+                      <span class="description">wowowow</span>
+                      <span class="time">- 10min ago</span>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="image-profile" id="2">
+
+                  <div class="top">
+                    <div class="top-content">
+                      <span class="name"><%=Uname%></span>
+                      <span class="description">wowowow</span>
+                      <span class="time">- 10min ago</span>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="image-profile" id="3">
+
+                  <div class="top">
+                    <div class="top-content">
+                      <span class="name"><%=Uname%></span>
+                      <span class="description">wowowow</span>
+                      <span class="time">- 10min ago</span>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="image-profile" id="4">
+
+                  <div class="top">
+                    <div class="top-content">
+                      <span class="name"><%=Uname%></span>
+                      <span class="description">wowowow</span>
+                      <span class="time">- 10min ago</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="image-profile" id="5">
+
+                  <div class="top">
+                    <div class="top-content">
+                      <span class="name"><%=Uname%></span>
+                      <span class="description">wowowow</span>
+                      <span class="time">- 10min ago</span>
+                    </div>
+                  </div>
+
+                </div>
+          
+              </div>
+          </div>
+        </div>
+
+        <div class="wrapper"></div>
+
+        <div class="bottom-nav">
+            <p id="social">Social :</p>
+            <a href="https://www.facebook.com"><img src="/images/facebook.png" height="25"></a>
+            <a href="https://www.twitter.com"><img src="/images/twitter.png" height="25"></a>
+            <p id="visitors">Visitors:</p>
+        </div>
+    </body>
+</html>
